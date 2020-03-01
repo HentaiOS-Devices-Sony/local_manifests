@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 <remote name="sony" fetch="https://github.com/sonyxperiadev/" />
-<remote name="baizhi" fetch="https://github.com/HentaiOS-Devices-sony" />
+<remote name="hds" fetch="https://github.com/HentaiOS-Devices-sony" />
 <remove-project name="device/linaro/poplar" />
 <remove-project name="device/linaro/poplar-kernel" />
 <project path="device/sony/sepolicy" name="device-sony-sepolicy" groups="device" remote="sony" revision="master" />
@@ -12,8 +12,8 @@
 <project path="device/sony/akatsuki" name="device-sony-akatsuki" groups="device" remote="baizhi" revision="queenslave" />-->
 
 <!--msm8998-->
-<project path="device/sony/yoshino" name="device-sony-yoshino" groups="device" remote="baizhi" revision="queenslave" />
-<project path="device/sony/poplar" name="device-sony-poplar" groups="device" remote="baizhi" revision="queenslave" />
+<project path="device/sony/yoshino" name="device-sony-yoshino" groups="device" remote="hds" revision="queenslave" />
+<project path="device/sony/poplar" name="device-sony-poplar" groups="device" remote="hds" revision="queenslave" />
   
   </manifest>
 
