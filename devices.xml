@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 <remote name="sony" fetch="https://github.com/sonyxperiadev/" />
-<remote name="baizhi" fetch="https://github.com/yuezhengbaizhi/" />
+<remote name="baizhi" fetch="https://github.com/HentaiOS-Devices-sony" />
 <remove-project name="device/linaro/poplar" />
 <remove-project name="device/linaro/poplar-kernel" />
 <project path="device/sony/sepolicy" name="device-sony-sepolicy" groups="device" remote="sony" revision="master" />
