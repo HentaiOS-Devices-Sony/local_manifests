@@ -4,6 +4,9 @@
 
 ```bash
 
+Xperia X Performance
+Xperia XZ
+Xperia XZs
 Xperia XZ1
 Xperia XZ1 Compact
 Xperia XZ Premium
@@ -69,6 +72,9 @@ repo sync -f --force-sync --no-tags --no-clone-bundle -j$(nproc --all)
 # Cherry-pick the Upstream Patches and Delete Some Repos That Would Cause Build Conflict
 . update.sh
 
+# Extra Step if Building for Tone Platform
+. q_4.9_repo_update.sh
+
 ```
 
 #### Build
@@ -110,3 +116,4 @@ fastboot flash userdata out/target/product/<device>/userdata.img ## Flash Userda
 ### References
 <a href="https://developer.sony.com/develop/open-devices/guides/aosp-build-instructions/build-aosp-android-android-10-0-0">Sony Open Device Project Android 10 Build Guide</a>
 
+<a href="https://sx.ix5.org/info/building-android/">Sony Xperia Corner - Building Android</a>
