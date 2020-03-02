@@ -38,7 +38,7 @@ mkdir ~/.bin
 curl http://commondatastorage.googleapis.com/git-repo-downloads/repo > ~/.bin/repo
 
     ## For Chinese Users, You Can Use The Repo Tool Provide By Mokee
-    curl https://raw.githubusercontent.com/MoKee/git-repo/stable/repo > ~/bin/repo
+    curl https://raw.githubusercontent.com/MoKee/git-repo/stable/repo > ~/.bin/repo
 
 chmod a+x ~/.bin/repo
 sudo nano ~/.bashrc ## Open .bashrc with Nano
