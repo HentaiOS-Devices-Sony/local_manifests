@@ -83,7 +83,7 @@ repo sync -f --force-sync --no-tags --no-clone-bundle -j$(nproc --all)
 lunch hentai_$device-userdebug
 
 # Build the Code
-mka bacon -jX ## Replace X With the Number of Thread of Your Processor
+make -j&(nproc)
 
 ````
 
