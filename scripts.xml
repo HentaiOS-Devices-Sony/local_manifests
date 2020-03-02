@@ -2,7 +2,7 @@
 <manifest>
 <remote name="baizhi" fetch="https://github.com/yuezhengbaizhi/" />
   <remote name="Devices-sony" fetch="https://github.com/HentaiOS-Devices-Sony/" />
-<project path="buildscripts" name="BuildScripts" remote="baizhi" revision="queenslave">
+<project path="vendor/oss/BuildScripts" name="BuildScripts" remote="baizhi" revision="queenslave">
   <linkfile src="make.sh" dest="make.sh" />
 </project>  
 <project path="vendor/oss/hentai_repo_update" name="hentai_repo_update" groups="device" remote="Devices-sony" revision="queenslave">
