@@ -116,18 +116,18 @@ make otapackage -j&(nproc)
 
 # Flash the OEM Image
 
-https://developer.sony.com/develop/open-devices/downloads/software-binaries ## Download the OEM Image for Your Device Here
-unzip SW_binaries_for_Xperia_ANDROID_10.0.7.1_R1_<release version>_<platform>.zip ## Unzip the OEM Image
+https://developer.sony.com/develop/open-devices/downloads/software-binaries                    ## Download the OEM Image for Your Device Here
+unzip SW_binaries_for_Xperia_ANDROID_10.0.7.1_R1_<release version>_<platform>.zip              ## Unzip the OEM Image
 fastboot flash oem SW_binaries_for_Xperia_ANDROID_10.0.7.1_R1_<release version>_<platform>.img ## Flash the Image
 
 # Flash the Hentai OS Images
 
-fastboot flash boot out/target/product/<device>/boot.img ## Flash Boot
-fastboot flash vbmeta out/target/product/<device>/vbmeta.img ## Flash Vbmeta
-fastboot flash dtbo out/target/product/<device>/dtbo.img ## Flash Dtbo
+fastboot flash boot out/target/product/<device>/boot.img         ## Flash Boot
+fastboot flash vbmeta out/target/product/<device>/vbmeta.img     ## Flash Vbmeta
+fastboot flash dtbo out/target/product/<device>/dtbo.img         ## Flash Dtbo
 fastboot flash recovery out/target/product/<device>/recovery.img ## Flash Recovery
-fastboot flash system out/target/product/<device>/system.img ## Flash System
-fastboot flash vendor out/target/product/<device>/vendor.img ## Flash Vendor
+fastboot flash system out/target/product/<device>/system.img     ## Flash System
+fastboot flash vendor out/target/product/<device>/vendor.img     ## Flash Vendor
 fastboot flash userdata out/target/product/<device>/userdata.img ## Flash Userdata
 
 # There is No Need to Flash any Gapps Package, Gapps Already Included
