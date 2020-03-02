@@ -18,7 +18,7 @@ Xperia 5
 ### How to Setup the Environment & Sync & Build
 #### Setup the Environment
 ````bash
-# Prepare your environment
+# Prepare your Java environment
 sudo apt-get update
 sudo apt-get install openjdk-8-jdk
 # Install the necessary tools to make an Android build
