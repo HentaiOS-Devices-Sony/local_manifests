@@ -35,7 +35,8 @@ sudo apt-get install bison g++-multilib git gperf libxml2-utils make zlib1g-dev 
 
 # Download Repo Tool and Set PATH
 mkdir ~/.bin
-curl http://commondatastorage.googleapis.com/git-repo-downloads/repo > ~/.bin/repo  
+curl http://commondatastorage.googleapis.com/git-repo-downloads/repo > ~/.bin/repo
+
     ## For Chinese Users, You Can Use The Repo Tool Provide By Mokee
     curl https://raw.githubusercontent.com/MoKee/git-repo/stable/repo > ~/bin/repo
 
