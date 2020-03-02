@@ -15,7 +15,22 @@ Xperia 10 Plus
 Xperia 1
 Xperia 5
 ```
-### How to Sync & Build
+### How to Setup the Environment & Sync & Build
+#### Setup the Environment
+````bash
+# Prepare your environment
+sudo apt-get update
+sudo apt-get install openjdk-8-jdk
+# Install the necessary tools to make an Android build
+sudo apt-get install bison g++-multilib git gperf libxml2-utils make zlib1g-dev zip liblz4-tool libncurses5 libssl-dev bc flex
+# Download Repo tool and Set PATH
+mkdir ~/.bin
+curl http://commondatastorage.googleapis.com/git-repo-downloads/repo > ~/.bin/repo
+chmod a+x ~/.bin/repo
+sudo nano ~/.bashrc ## Open .bashrc with Nano
+export PATH=~/bin:$PATH ## Add to the last line of .bashrc And save the file
+source ~/.bashrc
+````
 #### Sync the codes
 ```bash
 # Initialize local repository
