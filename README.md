@@ -53,8 +53,13 @@ cd local_manifests
 git checkout queenslave
 cd ../..
 
+# Solve Some confilct in the xmls
+## delete <project path="vendor/qcom/opensource/dataservices" name="platform_vendor_qcom_opensource_dataservices" groups="vendor" remote="github/hentaiOS" /> in .repo/manifests/snippets/hentai.xml
+## delete <project path="vendor/qcom/opensource/interfaces" name="platform_vendor_qcom_opensource_interfaces" groups="vendor" remote="github/hentaiOS" /> in .repo/manifests/snippets/hentai.xml
+
 # Sync
 repo sync -f --force-sync --no-tags --no-clone-bundle -j$(nproc --all)
+
 # Cherry-pick the upstream patches and delete some repos that would cause build conflict
 . update.sh
 ```
