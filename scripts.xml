@@ -7,5 +7,6 @@
 </project>  
 <project path="vendor/oss/hentai_repo_update" name="hentai_repo_update" groups="device" remote="Devices-sony" revision="queenslave">
   <linkfile src="update.sh" dest="update.sh" />
+  <linkfile src="q_4.9_repo_update.sh" dest="q_4.9_repo_update.sh" />
 </project>  
 </manifest>
