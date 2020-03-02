@@ -54,6 +54,10 @@ source ~/.bashrc
 
 ```bash
 
+# Creat the Folder for All the Source Code
+mkdir ~/hentai
+cd ~/hentai
+
 # Initialize Local Repository
 repo init -u https://github.com/HentaiOS/platform_manifest -b queenslave
 cd .repo
