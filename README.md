@@ -1,6 +1,6 @@
 # Hentai OS for Sony Xperia devices
 
-### this is for building Hentai OS for the following Sony Xperia Devices
+### This Is For Building Hentai OS For The Following Sony Xperia Devices
 
 ```bash
 
@@ -20,7 +20,7 @@ Xperia 5
 
 ```
 
-### How to Setup the Environment & Sync & Build
+### How to Setup the Environment & Sync & Build & Flash
 
 #### Setup the Environment
 
