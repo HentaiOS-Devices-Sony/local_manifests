@@ -107,6 +107,6 @@ fastboot flash userdata out/target/product/<device>/userdata.img ## Flash Userda
 
 ````
 
-
-Reference: <a href="https://developer.sony.com/develop/open-devices/guides/aosp-build-instructions/build-aosp-android-android-10-0-0">Sony Open Device Project Android 10 Build Guide</a>
+### References
+<a href="https://developer.sony.com/develop/open-devices/guides/aosp-build-instructions/build-aosp-android-android-10-0-0">Sony Open Device Project Android 10 Build Guide</a>
 
