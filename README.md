@@ -76,14 +76,14 @@ repo sync -f --force-sync --no-tags --no-clone-bundle -j$(nproc --all)
 ````bash
 
 # Setup Environment
-$ . build/envsetup.sh
+. build/envsetup.sh
 
 
 # Choose a Target
-$ lunch hentai_$device-userdebug
+lunch hentai_$device-userdebug
 
 # Build the Code
-$ mka bacon -jX ## Replace X With the Number of Thread of Your Processor
+mka bacon -jX ## Replace X With the Number of Thread of Your Processor
 
 ````
 
