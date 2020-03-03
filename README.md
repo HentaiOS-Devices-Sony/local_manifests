@@ -148,6 +148,8 @@ https://developer.sony.com/develop/open-devices/downloads/software-binaries     
 unzip SW_binaries_for_Xperia_ANDROID_10.0.7.1_R1_<release version>_<platform>.zip              ## Unzip the OEM Image
 fastboot flash oem SW_binaries_for_Xperia_ANDROID_10.0.7.1_R1_<release version>_<platform>.img ## Flash the Image
 
+## This Step is Essential
+
 ````
 
 ### Flash Hentai OS
@@ -163,7 +165,7 @@ fastboot flash system out/target/product/<device>/system.img     ## Flash System
 fastboot flash vendor out/target/product/<device>/vendor.img     ## Flash Vendor
 fastboot flash userdata out/target/product/<device>/userdata.img ## Flash Userdata
 
-# There is No Need to Flash any Gapps Package, Gapps Already Included
+## There is No Need to Flash any Gapps Package, Gapps Already Included
 
 ````
 
@@ -176,9 +178,9 @@ fastboot flash userdata out/target/product/<device>/userdata.img ## Flash Userda
 fastboot flash recovery <the-name-of-the-recovery-image>.img ## Flash Recovery to the Device; Then Boot to the Recovery by Pressing Both the Power and Volume Down, When Feel a Viberate, Release Power and Continue to Press Volume Down
 fastboot boot <the-name-of-the-recovery-image>.img ## Directly Boot to Recovery Without the Need to Flash Anything
 
-# Then Flash the Zip in the Recovery
+## Then Flash the Zip in the Recovery
 
-# There is No Need to Flash any Gapps Package, Gapps Already Included
+## There is No Need to Flash any Gapps Package, Gapps Already Included
 
 ````
 
