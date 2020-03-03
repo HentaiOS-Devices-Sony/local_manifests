@@ -84,9 +84,10 @@ git checkout queenslave
 cd ../..
 
 # Solve Some confilct in the Xmls
+## Delete These Two Lines in .repo/manifests/snippets/hentai.xml
 
-<project path="vendor/qcom/opensource/dataservices" name="platform_vendor_qcom_opensource_dataservices" groups="vendor" remote="github/hentaiOS" /> ## Delete This Line in .repo/manifests/snippets/hentai.xml
-<project path="vendor/qcom/opensource/interfaces" name="platform_vendor_qcom_opensource_interfaces" groups="vendor" remote="github/hentaiOS" /> ## Delete This Line in .repo/manifests/snippets/hentai.xml
+<project path="vendor/qcom/opensource/dataservices" name="platform_vendor_qcom_opensource_dataservices" groups="vendor" remote="github/hentaiOS" /> 
+<project path="vendor/qcom/opensource/interfaces" name="platform_vendor_qcom_opensource_interfaces" groups="vendor" remote="github/hentaiOS" /> 
 
 # Sync
 
