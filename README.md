@@ -1,6 +1,6 @@
 # Hentai OS for Sony Xperia devices
 
-### This Is For Building Hentai OS For The Following Sony Xperia Devices
+### This is for Building Hentai OS for the Following Sony Xperia Devices
 
 ```bash
 
@@ -89,14 +89,29 @@ cd ../..
 <project path="vendor/qcom/opensource/interfaces" name="platform_vendor_qcom_opensource_interfaces" groups="vendor" remote="github/hentaiOS" /> ## Delete This Line in .repo/manifests/snippets/hentai.xml
 
 # Sync
+
 repo sync -f --force-sync --no-tags --no-clone-bundle -j$(nproc --all)
 
 # Cherry-pick the Upstream Patches and Delete Some Repos That Would Cause Build Conflict
+
 . update.sh
 
 # Extra Step if Building for Xperia X / X Compact / X performance / XZ / XZs / Touch
+
 . q_4.9_repo_update.sh
 
+# Add flex and bison to Allow List to Make the Kernel Buildable
+
+nano build/soong/ui/build/paths/config.go ## Open with nano
+
+## Add these two lines to the End of Allow List
+## The Allow List Starts at Line 76, Ends at Line 112
+    
+    "flex":     Allowed,    ## Add this to line 113
+    "bison":    Allowed,    ## Add this to line 114
+    
+## Save and Close build/soong/ui/build/paths/config.go
+    
 ```
 
 #### Build
