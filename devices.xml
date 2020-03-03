@@ -2,58 +2,56 @@
 <manifest>
   <remote name="sony" fetch="https://github.com/sonyxperiadev/"/>
   <remote name="Devices-sony" fetch="https://github.com/HentaiOS-Devices-Sony/"/>
+    <remove-project name="device/linaro/poplar"/>
+    <remove-project name="device/linaro/poplar-kernel"/>
+    
+    <project path="device/sony/sepolicy" name="device-sony-sepolicy" groups="device" remote="sony" revision="master"/>
+    <project path="device/sony/common" name="device-sony-common" groups="device" remote="sony" revision="master"/>
   
-  <remove-project name="device/linaro/poplar"/>
-  <remove-project name="device/linaro/poplar-kernel"/>
+    <!--msm8956-->
+    <!--Loire Platform-->
+      <project path="device/sony/loire" name="device-sony-loire" groups="device" remote="sony" revision="p-mr1"/>
+      <project path="device/sony/blanc" name="device-sony-blanc" groups="device" remote="Devices-sony" revision="queenslave"/>
+      <project path="device/sony/kugo" name="device-sony-kugo" groups="device" remote="Devices-sony" revision="queenslave"/>
+      <project path="device/sony/suzu" name="device-sony-suzu" groups="device" remote="Devices-sony" revision="queenslave"/>
   
-  <project path="device/sony/sepolicy" name="device-sony-sepolicy" groups="device" remote="sony" revision="master"/>
-  <project path="device/sony/common" name="device-sony-common" groups="device" remote="sony" revision="master"/>
+    <!--sdm630-->
+    <!--Nile Platform-->
+      <project path="device/sony/nile" name="device-sony-nile" groups="device" remote="sony" revision="master"/>
+      <project path="device/sony/discovery" name="device-sony-discovery" groups="device" remote="Devices-sony" revision="queenslave"/>
+      <project path="device/sony/pioneer" name="device-sony-pioneer" groups="device" remote="Devices-sony" revision="queenslave"/>
+      <project path="device/sony/voyager" name="device-sony-voyager" groups="device" remote="Devices-sony" revision="queenslave"/>
+
+    <!--sdm630-->
+    <!--Ganges Platform-->
+      <project path="device/sony/ganges" name="device-sony-ganges" groups="device" remote="sony" revision="master"/>
+      <project path="device/sony/kirin" name="device-sony-kirin" groups="device" remote="Devices-sony" revision="queenslave"/>
+      <project path="device/sony/mermaid" name="device-sony-mermaid" groups="device" remote="Devices-sony" revision="queenslave"/>
+
+    <!--msm8996-->
+    <!--Tone Platform-->
+      <project path="device/sony/tone" name="device-sony-tone" groups="device" remote="sony" revision="master"/>
+      <project path="device/sony/dora" name="device-sony-dora" groups="device" remote="Devices-sony" revision="queenslave"/>
+      <project path="device/sony/kagura" name="device-sony-kagura" groups="device" remote="Devices-sony" revision="queenslave"/>
+      <project path="device/sony/keyaki" name="device-sony-keyaki" groups="device" remote="Devices-sony" revision="queenslave"/>
   
-  <!--msm8956-->
-  <!--Loire Platform-->
-    <project path="device/sony/loire" name="device-sony-loire" groups="device" remote="sony" revision="p-mr1"/>
-    <project path="device/sony/blanc" name="device-sony-blanc" groups="device" remote="Devices-sony" revision="queenslave"/>
-    <project path="device/sony/kugo" name="device-sony-kugo" groups="device" remote="Devices-sony" revision="queenslave"/>
-    <project path="device/sony/suzu" name="device-sony-suzu" groups="device" remote="Devices-sony" revision="queenslave"/>
-  
-  <!--sdm630-->
-  <!--Nile Platform-->
-    <project path="device/sony/nile" name="device-sony-nile" groups="device" remote="sony" revision="master"/>
-    <project path="device/sony/discovery" name="device-sony-discovery" groups="device" remote="Devices-sony" revision="queenslave"/>
-    <project path="device/sony/pioneer" name="device-sony-pioneer" groups="device" remote="Devices-sony" revision="queenslave"/>
-    <project path="device/sony/voyager" name="device-sony-voyager" groups="device" remote="Devices-sony" revision="queenslave"/>
+    <!--msm8998-->
+    <!--Yoshino Platform-->
+      <project path="device/sony/yoshino" name="device-sony-yoshino" groups="device" remote="sony" revision="master"/>
+      <project path="device/sony/lilac" name="device-sony-lilac" groups="device" remote="Devices-sony" revision="queenslave"/>
+      <project path="device/sony/maple" name="device-sony-maple" groups="device" remote="Devices-sony" revision="queenslave"/>
+      <project path="device/sony/poplar" name="device-sony-poplar" groups="device" remote="Devices-sony" revision="queenslave"/>
 
-  <!--sdm630-->
-  <!--Ganges Platform-->
-    <project path="device/sony/ganges" name="device-sony-ganges" groups="device" remote="sony" revision="master"/>
-    <project path="device/sony/kirin" name="device-sony-kirin" groups="device" remote="Devices-sony" revision="queenslave"/>
-    <project path="device/sony/mermaid" name="device-sony-mermaid" groups="device" remote="Devices-sony" revision="queenslave"/>
+    <!--sdm845-->
+    <!--Tama Platform-->
+      <project path="device/sony/tama" name="device-sony-tama" groups="device" remote="sony" revision="master"/>
+      <project path="device/sony/akari" name="device-sony-akari" groups="device" remote="Devices-sony" revision="queenslave"/>
+      <project path="device/sony/akatsuki" name="device-sony-akatsuki" groups="device" remote="Devices-sony" revision="queenslave"/>
+      <project path="device/sony/apollo" name="device-sony-apollo" groups="device" remote="Devices-sony" revision="queenslave"/>
 
-  <!--msm8996-->
-  <!--Tone Platform-->
-    <project path="device/sony/tone" name="device-sony-tone" groups="device" remote="sony" revision="master"/>
-    <project path="device/sony/dora" name="device-sony-dora" groups="device" remote="Devices-sony" revision="queenslave"/>
-    <project path="device/sony/kagura" name="device-sony-kagura" groups="device" remote="Devices-sony" revision="queenslave"/>
-    <project path="device/sony/keyaki" name="device-sony-keyaki" groups="device" remote="Devices-sony" revision="queenslave"/>
-  
-  <!--msm8998-->
-  <!--Yoshino Platform-->
-    <project path="device/sony/yoshino" name="device-sony-yoshino" groups="device" remote="sony" revision="master"/>
-    <project path="device/sony/lilac" name="device-sony-lilac" groups="device" remote="Devices-sony" revision="queenslave"/>
-    <project path="device/sony/maple" name="device-sony-maple" groups="device" remote="Devices-sony" revision="queenslave"/>
-    <project path="device/sony/poplar" name="device-sony-poplar" groups="device" remote="Devices-sony" revision="queenslave"/>
-
-  <!--sdm845-->
-  <!--Tama Platform-->
-    <project path="device/sony/tama" name="device-sony-tama" groups="device" remote="sony" revision="master"/>
-    <project path="device/sony/akari" name="device-sony-akari" groups="device" remote="Devices-sony" revision="queenslave"/>
-    <project path="device/sony/akatsuki" name="device-sony-akatsuki" groups="device" remote="Devices-sony" revision="queenslave"/>
-    <project path="device/sony/apollo" name="device-sony-apollo" groups="device" remote="Devices-sony" revision="queenslave"/>
-
-  <!--sm8150-->
-  <!--Kumano Platform-->
-    <project path="device/sony/kumano" name="device-sony-kumano" groups="device" remote="sony" revision="master"/>
-    <project path="device/sony/bahamut" name="device-sony-bahamut" groups="device" remote="Devices-sony" revision="queenslave"/>
-    <project path="device/sony/griffin" name="device-sony-griffin" groups="device" remote="Devices-sony" revision="queenslave"/>
-
+    <!--sm8150-->
+    <!--Kumano Platform-->
+      <project path="device/sony/kumano" name="device-sony-kumano" groups="device" remote="sony" revision="master"/>
+      <project path="device/sony/bahamut" name="device-sony-bahamut" groups="device" remote="Devices-sony" revision="queenslave"/>
+      <project path="device/sony/griffin" name="device-sony-griffin" groups="device" remote="Devices-sony" revision="queenslave"/>
 </manifest>
