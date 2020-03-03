@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-<remote name="baizhi" fetch="https://github.com/yuezhengbaizhi/" />
-  <remote name="Devices-sony" fetch="https://github.com/HentaiOS-Devices-Sony/" />
-<project path="vendor/oss/BuildScripts" name="BuildScripts" remote="baizhi" revision="queenslave">
-  <linkfile src="make.sh" dest="make.sh" />
-</project>  
-<project path="vendor/oss/hentai_repo_update" name="hentai_repo_update" groups="device" remote="Devices-sony" revision="queenslave">
-  <linkfile src="update.sh" dest="update.sh" />
-  <linkfile src="q_4.9_repo_update.sh" dest="q_4.9_repo_update.sh" />
-</project>  
+<remote name="baizhi" fetch="https://github.com/yuezhengbaizhi/"/>
+<remote name="Devices-sony" fetch="https://github.com/HentaiOS-Devices-Sony/"/>
+  <project path="vendor/oss/BuildScripts" name="BuildScripts" remote="baizhi" revision="queenslave">
+    <linkfile src="make.sh" dest="make.sh"/>
+  </project>  
+  <project path="vendor/oss/hentai_repo_update" name="hentai_repo_update" groups="device" remote="Devices-sony" revision="queenslave">
+    <linkfile src="update.sh" dest="update.sh"/>
+    <linkfile src="q_4.9_repo_update.sh" dest="q_4.9_repo_update.sh"/>
+  </project>  
 </manifest>
