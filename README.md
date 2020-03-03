@@ -150,8 +150,14 @@ make otapackage -j&(nproc)
 ````bash
 
 https://developer.sony.com/develop/open-devices/downloads/software-binaries                    ## Download the OEM Image for Your Device Here
+
 unzip SW_binaries_for_Xperia_ANDROID_10.0.7.1_R1_<release version>_<platform>.zip              ## Unzip the OEM Image
 fastboot flash oem SW_binaries_for_Xperia_ANDROID_10.0.7.1_R1_<release version>_<platform>.img ## Flash the Image
+
+## If Flashing for Xperia X / X Compact / X performance / XZ / XZs / Touch
+
+unzip SW_BINARIES_FOR_XPERIA_ANDROID_9.0_2.3.2_V9_<platform>.zip              ## Unzip the OEM Image
+fastboot flash oem SW_binaries_for_Xperia_ANDROID_9.0_2.3.2_V9_<platform>.img ## Flash the Image
 
 ## This Step is Essential
 
