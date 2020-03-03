@@ -25,8 +25,17 @@ Xperia 1
 Xperia 5
 
 ```
+### Before You Begin
 
-### How to Setup the Environment & Sync & Build & Flash
+#### Unlock the Bootloder
+
+unlock your device bootloader at <a href="https://developer.sony.com/develop/open-devices/get-started/unlock-bootloader/#unlock-code">Unlock Bootloader</a> following the  <a href="https://developer.sony.com/develop/open-devices/get-started/unlock-bootloader/how-to-unlock-bootloader/">How to Unlock Bootloader</a> guide
+
+#### System requirement
+
+Ubuntu 18.04 LTS Recommanded
+
+### How to Setup the Environment & Sync & Build
 
 #### Setup the Environment
 
@@ -113,17 +122,22 @@ make otapackage -j&(nproc)
 
 ````
 
-#### Flash the Images 
+### Flash 
+
+#### Flash the OEM Image with Fastboot
 
 ````bash
-
-# Flash the OEM Image
 
 https://developer.sony.com/develop/open-devices/downloads/software-binaries                    ## Download the OEM Image for Your Device Here
 unzip SW_binaries_for_Xperia_ANDROID_10.0.7.1_R1_<release version>_<platform>.zip              ## Unzip the OEM Image
 fastboot flash oem SW_binaries_for_Xperia_ANDROID_10.0.7.1_R1_<release version>_<platform>.img ## Flash the Image
 
-# Flash the Hentai OS Images
+````
+
+### Flash Hentai OS
+
+#### Flash Hentai OS with Fastboot
+````bash
 
 fastboot flash boot out/target/product/<device>/boot.img         ## Flash Boot
 fastboot flash vbmeta out/target/product/<device>/vbmeta.img     ## Flash Vbmeta
@@ -137,7 +151,7 @@ fastboot flash userdata out/target/product/<device>/userdata.img ## Flash Userda
 
 ````
 
-#### Flash the Flashable zip
+#### Flash Hentai OS with Flashable Zip using Recovery
 
 ````bash
 
