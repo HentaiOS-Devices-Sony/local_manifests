@@ -80,7 +80,14 @@ repo init -u https://github.com/HentaiOS/platform_manifest -b queenslave
 cd .repo
 git clone https://github.com/HentaiOS-Devices-Sony/local_manifests
 cd local_manifests
+
 git checkout queenslave
+
+## If Building for Xperia X / X Compact / X performance / XZ / XZs / Touch
+## Use
+git checkout queenslave_4.9
+## Instead
+
 cd ../..
 
 # Solve Some confilct in the Xmls
