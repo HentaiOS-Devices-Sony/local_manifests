@@ -85,7 +85,7 @@ repo sync -f --force-sync --no-tags --no-clone-bundle -j$(nproc --all)
 # Cherry-pick the Upstream Patches and Delete Some Repos That Would Cause Build Conflict
 . update.sh
 
-# Extra Step if Building for Tone Platform
+# Extra Step if Building for Xperia X / X Compact / X performance / XZ / XZs / Touch
 . q_4.9_repo_update.sh
 
 ```
