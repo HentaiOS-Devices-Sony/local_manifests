@@ -4,6 +4,9 @@
 
 ```bash
 
+Xperia Touch
+Xperia X
+Xperia X Compact
 Xperia X Performance
 Xperia XZ
 Xperia XZs
