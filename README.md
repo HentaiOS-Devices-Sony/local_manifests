@@ -85,7 +85,9 @@ git checkout queenslave
 
 ## If Building for Xperia X / X Compact / X performance / XZ / XZs / Touch
 ## Use
+
 git checkout queenslave_4.9
+
 ## Instead
 
 cd ../..
@@ -103,10 +105,6 @@ repo sync -f --force-sync --no-tags --no-clone-bundle -j$(nproc --all)
 # Cherry-pick the Upstream Patches and Delete Some Repos That Would Cause Build Conflict
 
 . update.sh
-
-# Extra Step if Building for Xperia X / X Compact / X performance / XZ / XZs / Touch
-
-. q_4.9_repo_update.sh
 
 # Add flex and bison to Allow List to Make the Kernel Buildable
 
