@@ -132,6 +132,7 @@ nano build/soong/ui/build/paths/config.go ## Open with nano
 # Choose a Target
 
 lunch hentai_$device-userdebug
+## _Go Means It's an Android Go build
 
 # Build the images
 
