@@ -166,6 +166,8 @@ fastboot flash oem SW_binaries_for_Xperia_ANDROID_9.0_2.3.2_V9_<platform>.img ##
 
 ### Flash Hentai OS
 
+Two Methods for Flashing Hentai OS to Device
+
 #### Flash Hentai OS with Fastboot
 ````bash
 
