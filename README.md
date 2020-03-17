@@ -60,8 +60,17 @@ curl http://commondatastorage.googleapis.com/git-repo-downloads/repo > ~/.bin/re
 
 chmod a+x ~/.bin/repo
 sudo nano ~/.bashrc ## Open .bashrc with Nano
-export PATH=~/bin:$PATH ## Add to the last line of .bashrc And save the file
+export PATH=~/.bin:$PATH ## Add to the last line of .bashrc And save the file
 source ~/.bashrc
+
+````
+
+#### Setup Git
+
+````bash
+
+    git config --global user.email "you@example.com"
+    git config --global user.name "Your Name"
 
 ````
 
