@@ -25,7 +25,7 @@ Xperia 1
 Xperia 5
 
 ```
-<a hurf="https://github.com/HentaiOS-Devices-Sony/android_device_sony_poplar_dsds/blob/queenslave/README.md">Build instruction for XZ1 Stock 4.4 kernel Based ROM</a>
+<a href="https://github.com/HentaiOS-Devices-Sony/android_device_sony_poplar_dsds/blob/queenslave/README.md">Build instruction for XZ1 Stock 4.4 kernel Based ROM</a>
 
 ### Before You Begin
 
