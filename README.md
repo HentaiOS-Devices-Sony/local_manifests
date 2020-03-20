@@ -44,6 +44,7 @@ Ubuntu 18.04 LTS Recommanded
 # Prepare Java Environment
 
 sudo apt-get update
+
 sudo apt-get install openjdk-8-jdk
 
 # Install the Necessary Tools to Make an Android Build
@@ -53,15 +54,20 @@ sudo apt-get install bison g++-multilib git gperf libxml2-utils make zlib1g-dev 
 # Download Repo Tool and Set PATH
 
 mkdir ~/.bin
+
 curl http://commondatastorage.googleapis.com/git-repo-downloads/repo > ~/.bin/repo
 
     ## For Chinese Users, You Can Use The Repo Tool Provide By Mokee
     curl https://raw.githubusercontent.com/MoKee/git-repo/stable/repo > ~/.bin/repo
 
 chmod a+x ~/.bin/repo
+
 sudo nano ~/.bashrc ## Open .bashrc with Nano
+
 export PATH=~/.bin:$PATH ## Add to the last line of .bashrc And save the file
+
 source ~/.bashrc
+
 
 ````
 
@@ -70,6 +76,7 @@ source ~/.bashrc
 ````bash
 
     git config --global user.email "you@example.com"
+
     git config --global user.name "Your Name"
 
 ````
@@ -81,19 +88,22 @@ source ~/.bashrc
 # Creat the Folder for All the Source Code
 
 mkdir ~/hentai
+
 cd ~/hentai
 
 # Initialize Local Repository
 
 repo init -u https://github.com/HentaiOS/platform_manifest -b queenslave
+
 cd .repo
+
 git clone https://github.com/HentaiOS-Devices-Sony/local_manifests
+
 cd local_manifests
 
 git checkout queenslave
 
-## If Building for Xperia X / X Compact / X performance / XZ / XZs / Touch
-## Use
+## If Building for Xperia X / X Compact / X performance / XZ / XZs / Touch Use
 
 git checkout queenslave_4.9
 
@@ -102,9 +112,11 @@ git checkout queenslave_4.9
 cd ../..
 
 # Solve Some confilct in the Xmls
+
 ## Delete These Two Lines in .repo/manifests/snippets/hentai.xml
 
 <project path="vendor/qcom/opensource/dataservices" name="platform_vendor_qcom_opensource_dataservices" groups="vendor" remote="github/hentaiOS" /> 
+
 <project path="vendor/qcom/opensource/interfaces" name="platform_vendor_qcom_opensource_interfaces" groups="vendor" remote="github/hentaiOS" /> 
 
 # Sync
@@ -141,6 +153,7 @@ nano build/soong/ui/build/paths/config.go ## Open with nano
 # Choose a Target
 
 lunch hentai_$device-userdebug
+
 ## _Go Means It's an Android Go build
 
 # Build the images
@@ -162,11 +175,13 @@ make otapackage -j&(nproc)
 https://developer.sony.com/develop/open-devices/downloads/software-binaries                    ## Download the OEM Image for Your Device Here
 
 unzip SW_binaries_for_Xperia_ANDROID_10.0.7.1_R1_<release version>_<platform>.zip              ## Unzip the OEM Image
+
 fastboot flash oem SW_binaries_for_Xperia_ANDROID_10.0.7.1_R1_<release version>_<platform>.img ## Flash the Image
 
 ## If Flashing for Xperia X / X Compact / X performance / XZ / XZs / Touch
 
 unzip SW_BINARIES_FOR_XPERIA_ANDROID_9.0_2.3.2_V9_<platform>.zip              ## Unzip the OEM Image
+
 fastboot flash oem SW_binaries_for_Xperia_ANDROID_9.0_2.3.2_V9_<platform>.img ## Flash the Image
 
 ## This Step is Essential
@@ -178,16 +193,24 @@ fastboot flash oem SW_binaries_for_Xperia_ANDROID_9.0_2.3.2_V9_<platform>.img ##
 Two Methods for Flashing Hentai OS to Device
 
 #### Flash Hentai OS with Fastboot
+
 ````bash
 
 fastboot flash boot out/target/product/<device>/boot.img         ## Flash Boot
+
 fastboot flash vbmeta out/target/product/<device>/vbmeta.img     ## Flash Vbmeta
+
 fastboot flash dtbo out/target/product/<device>/dtbo.img         ## Flash Dtbo
+
 fastboot flash recovery out/target/product/<device>/recovery.img ## Flash Recovery
+
 fastboot flash system out/target/product/<device>/system.img     ## Flash System
+
 fastboot flash vendor out/target/product/<device>/vendor.img     ## Flash Vendor
+
 fastboot flash userdata out/target/product/<device>/userdata.img ## Flash Userdata
 
+## Depends on device, it may not have dtbo or recovery or vbmeta partition
 ## There is No Need to Flash any Gapps Package, Gapps Already Included
 
 ````
@@ -199,6 +222,7 @@ fastboot flash userdata out/target/product/<device>/userdata.img ## Flash Userda
 # Flash the Zip With TWRP or Any Recovey
 
 fastboot flash recovery <the-name-of-the-recovery-image>.img ## Flash Recovery to the Device; Then Boot to the Recovery by Pressing Both the Power and Volume Down, When Feel a Viberate, Release Power and Continue to Press Volume Down
+
 fastboot boot <the-name-of-the-recovery-image>.img ## Directly Boot to Recovery Without the Need to Flash Anything
 
 ## Then Flash the Zip in the Recovery
