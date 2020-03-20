@@ -237,3 +237,7 @@ fastboot boot <the-name-of-the-recovery-image>.img ## Directly Boot to Recovery 
 <a href="https://developer.sony.com/develop/open-devices/guides/aosp-build-instructions/build-aosp-android-android-10-0-0">Sony Open Device Project Android 10 Build Guide</a>
 
 <a href="https://sx.ix5.org/info/building-android/">Sony Xperia Corner - Building Android</a>
+
+<a href="https://bbs.mokeedev.com/t/topic/21">Mokee Repo</a>
+
+<a href="https://github.com/PixelExperience/manifest/blob/ten/README.md">Pixel Experence Manifest Readme</a>
