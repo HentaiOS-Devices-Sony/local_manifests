@@ -25,6 +25,8 @@ Xperia 1
 Xperia 5
 
 ```
+<a hurf="https://github.com/HentaiOS-Devices-Sony/android_device_sony_poplar_dsds/blob/queenslave/README.md">Build instruction for XZ1 Stock 4.4 kernel Based ROM</a>
+
 ### Before You Begin
 
 #### Unlock the Bootloder
@@ -67,7 +69,6 @@ sudo nano ~/.bashrc ## Open .bashrc with Nano
 export PATH=~/.bin:$PATH ## Add to the last line of .bashrc And save the file
 
 source ~/.bashrc
-
 
 ````
 
