@@ -48,7 +48,7 @@ sudo apt-get install openjdk-8-jdk
 
 # Install the Necessary Tools to Make an Android Build
 
-sudo apt-get install bison g++-multilib git gperf libxml2-utils make zlib1g-dev zip liblz4-tool libncurses5 libssl-dev bc flex python
+sudo apt-get install bison g++-multilib git gperf libxml2-utils make zlib1g-dev zip liblz4-tool libncurses5 libssl-dev bc flex python curl
 
 # Download Repo Tool and Set PATH
 
